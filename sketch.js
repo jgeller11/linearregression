@@ -27,6 +27,8 @@ function draw() {
 }
 
 function mouseClicked() {
-  x.push(mouseX)
-  y.push(400-mouseY)
+  if ((mouseX<400)&&(mouseY<400)&&(mouseX>0)&&(mouseY>0)){
+    x.push(mouseX)
+    y.push(400-mouseY)
+  }
 }
